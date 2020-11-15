@@ -117,6 +117,7 @@ debt.plot<- stripchart(debt.stock ~ financial.integration,
                         cex = 1.5, las = 1, col = "firebrick",
                         xlab = "Financial Integration", ylab = "Debt Stock",
                         main = "Debt stock ~ Financial Integration")
+
 # overlay both models on the data
 abline(debt.mod)
 abline(debt.mod_2)

@@ -138,7 +138,8 @@ persp(kde,
       phi = 30, 
       xlab = "beta_1", 
       ylab = "beta_2", 
-      zlab = "Est. Density")
+      zlab = "Est. Density",
+      main = "Distribution of Model Estimates")
 
 # the plot shows a distribution of coefficients estimated by R
 # ==============================================================================
