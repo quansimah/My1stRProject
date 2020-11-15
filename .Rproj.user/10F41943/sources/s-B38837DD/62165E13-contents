@@ -5,7 +5,7 @@
 #
 # ======== RAW DATA ============================================================
 # let's read the raw data from data.raw
-debt.raw <- read.csv(paste(path.data.raw,"debt.data.csv",
+debt.raw <- read.csv(paste(path.data.raw,"debt.raw.csv",
                            sep = ""),
                      stringsAsFactors = FALSE, 
                      strip.white = TRUE)

@@ -1,8 +1,8 @@
 #
 #
 #
-# DATA ANALYSIS
-# Performing Regression Analyses of clean data
+# DATA ANALYSIS OF DEBT DATA
+# Performing Regression Analyses of clean debt data
 #
 #
 

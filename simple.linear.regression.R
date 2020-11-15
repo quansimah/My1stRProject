@@ -22,7 +22,10 @@ sim.data <- data.t <- read.csv(paste(path.data.clean,"simulated.data.csv",
 
 # First, let us carry out a graphical analysis of our variables
 
-# let us plot X1 againnst Y1 to visualize their relationship 
+
+# let us plot X1 againnst Y1 to visualize their relationship
+
+
 slr.plot <- scatter.smooth(x= sim.data$X1, y= sim.data$Y, main ="X1~ Y",
                            pch =16, col = 'red', xlab = "X1", ylab = "Y")
 
