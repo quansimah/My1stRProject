@@ -1,0 +1,24 @@
+{
+    "id": "9BFE825E",
+    "path": "~/R/My1stRProject/data.analysis.R",
+    "project_path": "data.analysis.R",
+    "type": "r_source",
+    "hash": "3178270936",
+    "contents": "",
+    "dirty": false,
+    "created": 1605294506419.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "16,0",
+        "scrollLine": "8"
+    },
+    "folds": "9|16|14|15|\n17|30|26|46|\n29|32|144|0|\n147|22|174|71|\n",
+    "lastKnownWriteTime": 1605417940,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605417940513,
+    "read_only": false,
+    "read_only_alternatives": []
+}
