@@ -13,8 +13,8 @@ debt.raw <- read.csv(paste(path.data.raw,"debt.raw.csv",
 str(debt.raw)
 head(debt.raw)
 # inspect series names
-debt.raw$Ã¯..Series.Name
-unique(debt.raw$Ã¯..Series.Name)
+str(debt.raw)
+unique(debt.raw$ï..series.name)
 
 # make columns with yearly data numeric
 for (i in 5:ncol(debt.raw)){
@@ -29,7 +29,7 @@ for (i in 5:ncol(debt.raw)){
 # use a function
 # x represents the unique Series Name
 getvar <- function(x){
-  chosen.var <- subset(debt.raw,Ã¯..Series.Name == x )
+  chosen.var <- subset(debt.raw,ï..series.name == x )
   return(chosen.var)
 }
   

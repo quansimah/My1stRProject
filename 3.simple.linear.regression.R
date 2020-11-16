@@ -26,7 +26,7 @@ sim.data <- data.t <- read.csv(paste(path.data.clean,"simulated.data.csv",
 # let us plot X1 againnst Y1 to visualize their relationship
 
 
-slr.plot <- scatter.smooth(x= sim.data$X1, y= sim.data$Y, main ="X1~ Y",
+slr.plot <- plot(x= sim.data$X1, y= sim.data$Y, main ="X1~ Y",
                            pch =16, col = 'red', xlab = "X1", ylab = "Y")
 
 # do outliers affect the line in the scatter plot?

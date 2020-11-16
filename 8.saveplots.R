@@ -8,8 +8,9 @@
 # ==== SIMPLE REGRESSION PLOTS =================================================
 pdf("4.figures/simple.linear.regression.pdf", height = 5, width = 8)
 
-slr.plot <- scatter.smooth(x= sim.data$X1, y= sim.data$Y, main ="X1~ Y",
+slr.plot <- plot(x= sim.data$X1, y= sim.data$Y, main ="X1~ Y",
                            pch =16, col = 'red', xlab = "X1", ylab = "Y")
+abline(linearMod)
 
 par(mfrow = c(1,2))
 

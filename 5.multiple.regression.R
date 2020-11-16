@@ -7,7 +7,7 @@
 # ------ RUN SCRIPT ------------------------------------------------------------
 # for this section, we need the Rpackages AER and MASS
 # we also need  to run the linear regression script since we will be comparing
-source("simple.linear.regression.R")
+source("3.simple.linear.regression.R")
 
 
 
@@ -122,7 +122,7 @@ set.seed(1)
 for (i in 1:10000) { 
 A<- rmvnorm(50, c(25, 50), sigma = cbind(c(5, 1.25), c(1.25, 10)))
 e <- rnorm(50, sd = 5)
-B <- 5 + 2.5 * X[, 1] + 3 * X[, 2] + e
+B <- 5 + 2.5 * A[, 1] + 3 * A[, 2] + e
 # store coefficients in vector for coefficients
   coefs[i,] <- lm(B ~ A[,1] + A[,2])$coefficients[- 1]
   
@@ -131,6 +131,7 @@ B <- 5 + 2.5 * X[, 1] + 3 * X[, 2] + e
 
 # compute density estimates
 kde <- kde2d(coefs[,1], coefs[,2])
+
 
 # plot density estimate
 persp(kde, 
