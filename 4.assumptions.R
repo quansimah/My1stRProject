@@ -6,7 +6,7 @@
 
 # ---- SCRIPTS -------------------------------------------------------
 # Run linear model script
-source("simple.linear.regression.R")
+source("5.simple.linear.regression.R")
 
 
 

@@ -29,7 +29,7 @@ data.2019 <- subset(debt.data,years == "2019")
 
 # ======= DEBT STOCK REGRESSION ================================================
 # do a simple linear regression
-# plotting speed against distance
+# plotting debt stock against financial integration
 scatter.smooth(x= debt.data$financial.integration,
                y= debt.data$debt.stock, main ="Debt stock~ financial integration")
 
@@ -117,6 +117,13 @@ debt.plot<- stripchart(debt.stock ~ financial.integration,
                         cex = 1.5, las = 1, col = "firebrick",
                         xlab = "Financial Integration", ylab = "Debt Stock",
                         main = "Debt stock ~ Financial Integration")
+debt.plot_2<- stripchart(debt.stock ~ financial.integration + factor(years),
+                       data =debt.data,
+                       vertical = TRUE,
+                       pch = 16, 
+                       cex = 1.5, las = 1, col = "firebrick",
+                       xlab = "Financial Integration", ylab = "Debt Stock",
+                       main = "Debt stock ~ Financial Integration")
 
 # overlay both models on the data
 abline(debt.mod)

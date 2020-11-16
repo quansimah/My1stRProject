@@ -108,7 +108,7 @@ summary(linearMod)
 #> -13.4182  -6.1344  -0.5484   5.7165  15.5783 
 
 #> Coefficients:
-#>   Estimate Std. Error t value Pr(>|t|)    
+#>              Estimate Std. Error t value Pr(>|t|)    
 #> (Intercept) 105.3075    13.2156   7.968 2.46e-10 ***
 #>  X1            4.4357     0.5179   8.564 3.13e-11 ***
 #>  ---

@@ -1,0 +1,24 @@
+{
+    "id": "CAD4A823",
+    "path": "~/R/My1stRProject/data.analysis.R",
+    "project_path": "data.analysis.R",
+    "type": "r_source",
+    "hash": "3318050813",
+    "contents": "",
+    "dirty": false,
+    "created": 1605473177499.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "119,62",
+        "scrollLine": "112"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1605473312,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605473312015,
+    "read_only": false,
+    "read_only_alternatives": []
+}
