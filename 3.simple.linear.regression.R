@@ -220,6 +220,9 @@ YPred <- predict(lmMod, testData)
 # make a dataframe with the actual and predicted data
 actual_preds <- data.frame(cbind(actuals = testData$Y,
                                  predicteds =YPred))
+# write a csv with the actual and predicted values
+write.csv(actual_preds, paste(path.results,"predictions.csv", sep = ""), 
+          row.names = FALSE)
 
 # inspect the actual_preds dataframe
 head(actual_preds)
@@ -270,6 +273,11 @@ cvResults <- suppressWarnings( CVlm (sim.data, form.lm = Y ~ X1,
 # supress warning supresses the warnings
 # Lines are very close and  parallel 
 # This confirms the linear model's performance
+
+# Write a csv with the predicted results from the 10 fold cross validation
+write.csv(cvResults, paste(path.results,"cross.validataion.csv", sep = ""), 
+          row.names = FALSE)
+
 
 # find mean squared error of k-fold cross validation
 attr(cvResults, 'ms')

@@ -107,6 +107,20 @@ corrplot(cor(sim.data[,-3]))
 
 # ==============================================================================
 
+#=== COMPARING AIC AND BIC =====================================================
+# Calculate the AIC of the simple linear Model
+AIC(linearMod)
+# 343.659
+
+# Calculate the AIC of the multiple linear model
+AIC(mult.mod)
+# 289.4026
+
+# The AIC of the multiple linear model is lesser than than of the simple linear
+# model. 
+
+# ==============================================================================
+
 # ==== DISTRIBUTION OF OLS ESTIMATES ===========================================
 # we need to load the R package "MASS"
 

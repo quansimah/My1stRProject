@@ -33,6 +33,16 @@ wk.dir <- getwd() #
 # ---- libraries ----
 
 # install libraries needed for the project
+install.packages("mvtnorm")
+install.packages("e1071")
+install.packages("lattice")
+install.packages("DAAG")
+install.packages("ggplot2")
+install.packages("gvlma")
+install.packages("AER")
+install.packages("MASS")
+install.packages("corrplot")
+
 
 # load the libraries needed for the project to run 
 library(mvtnorm)
@@ -40,7 +50,6 @@ library(e1071)
 library(lattice)
 library(DAAG)
 library(ggplot2)
-library(DataCombine)
 library(gvlma)
 library(AER)
 library(MASS)
@@ -54,7 +63,8 @@ library(corrplot)
 
 # names of project folders ("figures", "data.raw","data.clean","results")
 # store names of the folders in an object
-folder.names <- c("1.data.raw","2.data.clean", "3.results","4.figures")
+folder.names <- c("1.data.raw","2.data.clean", "3.results","4.figures",
+                  "5.scripts")
 # make the folders if they don't exist yet. 
 for(i in 1:length(folder.names)){ 
   if(file.exists(folder.names[i]) == FALSE){
@@ -68,7 +78,7 @@ path.data.raw <- paste(wk.dir, "/", folder.names[1], "/", sep = "")
 path.data.clean <- paste(wk.dir, "/", folder.names[2], "/", sep = "")
 path.results <- paste(wk.dir, "/", folder.names[3], "/", sep = "")
 path.fig <- paste(wk.dir, "/",folder.names[4], "/", sep = "")
-
+path.scripts <- paste(wk.dir, "/",folder.names[5], "/", sep = "") 
 
 # =============================================================================
 # --- run scripts ---

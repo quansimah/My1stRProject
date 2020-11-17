@@ -127,7 +127,7 @@ debt.plot_2<- stripchart(debt.stock ~ financial.integration + factor(years),
 
 # overlay both models on the data
 abline(debt.mod)
-abline(debt.mod_2)
+abline(debt.mod_2, col = 'navy')
 # Warning message:
 # In abline(debt.mod_2) :
 #         only using the first two of 3 regression coefficients
@@ -163,6 +163,9 @@ summary(debt.mod)
 # (62 observations deleted due to missingness)
 # Multiple R-squared:  0.03262,	Adjusted R-squared:  0.02053 
 # F-statistic: 2.698 on 1 and 80 DF,  p-value: 0.1044
+AIC(debt.mod)
+# 846.0453 
+
 
 # for the polynomial regression model
 summary(debt.mod_2)
@@ -170,6 +173,8 @@ summary(debt.mod_2)
 # (62 observations deleted due to missingness)
 # Multiple R-squared:  0.08686,	Adjusted R-squared:  0.06374 
 # F-statistic: 3.757 on 2 and 79 DF,  p-value: 0.02762
+AIC(debt.mod_2)
+# 843.3143
 
 # for the multiple regression model
 summary(mult.debt.mod)
@@ -177,6 +182,9 @@ summary(mult.debt.mod)
 # (62 observations deleted due to missingness)
 # Multiple R-squared:  0.3758,	Adjusted R-squared:  0.3517 
 # F-statistic: 15.65 on 3 and 78 DF,  p-value: 4.648e-08
+AIC(mult.debt.mod)
+# 814.1262
+
 
 # for all 3, the multiple regression model explained the values best
 # however, it showed extremely low coefficients 
