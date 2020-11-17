@@ -4,12 +4,20 @@
 #  Performing a  multiple regression analysis on simulated data
 #
 
-# ------ RUN SCRIPT ------------------------------------------------------------
-# for this section, we need the Rpackages AER and MASS
-# we also need  to run the linear regression script since we will be comparing
-source("3.simple.linear.regression.R")
+# ====== READ CSV ==============================================================
+# read the simulated data csv and  assign to object sim.data
+sim.data <- data.t <- read.csv(paste(path.data.clean,"simulated.data.csv",
+                                     sep = ""), stringsAsFactors = FALSE,
+                               strip.white = TRUE)
+# ==============================================================================
 
-
+# ==== LOAD LINEAR MODEL =======================================================
+# for this section, we need the Rpackages AER and MASS, which are already loaded
+# in main
+# we also need  to read the saved linear model since we will be comparing
+linearMod <-readRDS(paste(path.results,"linearMod.RDS",
+                          sep = ""))
+# ==============================================================================
 
 
 # ===== OMITTED VARIABLE BIAS ==================================================
@@ -165,7 +173,7 @@ persp(kde,
 # Y = 5 + 2.5 * X[, 1] + 3 * X[, 2] + u
 # linearMod estimated that Y= 105.308 + 4.436*X[,1]
 # mult.mod estimated that Y = -20.424 + 3.451*X[,1] + 3.009*X[,2]
-# These are both estimations of the true model
+# These are both attempts to estimate the true model
 # we can progress to more complex forms of modeling
 # And these might allow for better estimations of the true model 
 # ==============================================================================

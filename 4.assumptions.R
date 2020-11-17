@@ -4,9 +4,14 @@
 # What are the assumptions that our linear model has to fulfill?
 
 
-# ---- SCRIPTS -------------------------------------------------------
-# Run linear model script
-source("5.simple.linear.regression.R")
+# ==== LOAD LINEAR MODEL =======================================================
+# To test the assumptions on the previously generated linear model,
+# we need to read the save linear Model 
+linearMod <-readRDS(paste(path.results,"linearMod.RDS",
+                          sep = ""))
+# ==============================================================================
+
+
 
 
 

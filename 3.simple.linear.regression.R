@@ -95,6 +95,9 @@ print(linearMod)
 #       105.308        4.436 
 # This translates to Yestimate = 105.308 + 4.436*X1
 
+# since the linear model will be used in other scripts, save the linear model
+saveRDS(linearMod,paste(path.results,"linearMod.rds", sep = ""))
+
 # ==============================================================================
 
 # === LINEAR REGRESSION DIAGNOSTICS ============================================

@@ -63,8 +63,7 @@ library(corrplot)
 
 # names of project folders ("figures", "data.raw","data.clean","results")
 # store names of the folders in an object
-folder.names <- c("1.data.raw","2.data.clean", "3.results","4.figures",
-                  "5.scripts")
+folder.names <- c("1.data.raw","2.data.clean", "3.results","4.figures")
 # make the folders if they don't exist yet. 
 for(i in 1:length(folder.names)){ 
   if(file.exists(folder.names[i]) == FALSE){
@@ -78,8 +77,6 @@ path.data.raw <- paste(wk.dir, "/", folder.names[1], "/", sep = "")
 path.data.clean <- paste(wk.dir, "/", folder.names[2], "/", sep = "")
 path.results <- paste(wk.dir, "/", folder.names[3], "/", sep = "")
 path.fig <- paste(wk.dir, "/",folder.names[4], "/", sep = "")
-path.scripts <- paste(wk.dir, "/",folder.names[5], "/", sep = "") 
-
 # =============================================================================
 # --- run scripts ---
 
