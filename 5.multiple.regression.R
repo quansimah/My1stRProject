@@ -167,15 +167,5 @@ persp(kde,
 # the plot shows a distribution of coefficients estimated by R
 # ==============================================================================
 
-
-# ===== CONCLUSION =============================================================
-# Our original simulated data showed a true model of :
-# Y = 5 + 2.5 * X[, 1] + 3 * X[, 2] + u
-# linearMod estimated that Y= 105.308 + 4.436*X[,1]
-# mult.mod estimated that Y = -20.424 + 3.451*X[,1] + 3.009*X[,2]
-# These are both attempts to estimate the true model
-# we can progress to more complex forms of modeling
-# And these might allow for better estimations of the true model 
-# ==============================================================================
-# 
+ 
 

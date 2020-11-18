@@ -78,7 +78,7 @@ path.data.clean <- paste(wk.dir, "/", folder.names[2], "/", sep = "")
 path.results <- paste(wk.dir, "/", folder.names[3], "/", sep = "")
 path.fig <- paste(wk.dir, "/",folder.names[4], "/", sep = "")
 # =============================================================================
-# --- run scripts ---
+
 
 
 # ==== end =================================================================
