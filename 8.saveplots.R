@@ -2,8 +2,10 @@
 #
 #
 # SAVING PLOTS
-# Saving plots into pdfs
-#
+# Saving plots from the different scripts into pdfs 
+# This script depends on all the other scripts to have been run
+# It simply saves the plots from each script into its own pdf and saves that pdf 
+# into the figures folder. 
 
 # ==== SIMPLE REGRESSION PLOTS =================================================
 pdf("4.figures/simple.linear.regression.pdf", height = 5, width = 8)
